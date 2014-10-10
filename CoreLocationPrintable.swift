@@ -75,20 +75,13 @@ extension CLDeviceOrientation: Printable {
 	public var description: String {
 		get {
 			switch (self) {
-			case .Unknown:
-				return ".Unknown"
-			case .Portrait:
-				return ".Portrait"
-			case .PortraitUpsideDown:
-				return ".PortraitUpsideDown"
-			case .LandscapeLeft:
-				return ".LandscapeLeft"
-			case .LandscapeRight:
-				return ".LandscapeRight"
-			case .FaceUp:
-				return ".FaceUp"
-			case .FaceDown:
-				return ".FaceDown"
+			case .Unknown: return ".Unknown"
+			case .Portrait: return ".Portrait"
+			case .PortraitUpsideDown: return ".PortraitUpsideDown"
+			case .LandscapeLeft: return ".LandscapeLeft"
+			case .LandscapeRight: return ".LandscapeRight"
+			case .FaceUp: return ".FaceUp"
+			case .FaceDown: return ".FaceDown"
 			}
 		}
 	}
@@ -99,14 +92,10 @@ extension CLActivityType: Printable {
 
 	public var description: String {
 		switch (self) {
-		case .Other:
-			return ".Other"
-		case .AutomotiveNavigation:
-			return ".AutomotiveNavigation"
-		case .Fitness:
-			return ".Fitness"
-		case .OtherNavigation:
-			return ".OtherNavigation"
+		case .Other: return ".Other"
+		case .AutomotiveNavigation: return ".AutomotiveNavigation"
+		case .Fitness: return ".Fitness"
+		case .OtherNavigation: return ".OtherNavigation"
 		}
 	}
 
